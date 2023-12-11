@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<title>Jumpstart Ph</title>
+
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../myscripts.js"></script>
+</head>
+
+<body>
+    <div class="whole-container">
+
+        <div class="top-content">
+
+            <div class="logoside">
+                <div class="logo">
+                </div>
+            </div>
+
+            <div class="navigationside-index">
+
+                <ul id="navigationtabs">
+                    <li id="navtabspace"></li>
+                    <li id="navtabs">
+                        <button class="currenttab-index">
+                            Home
+                        </button>
+                    </li>
+                    <li id="navtabspace"></li>
+                    <li id="navtabs">
+                        <a href="jobApplications.html">
+                            <button class="button-index">
+                                Job Applications
+                            </button>
+                        </a>
+                    </li>
+                    <li id="navtabspace"></li>
+                    <li id="navtabs">
+                        <a href="companies.html">
+                            <button class="button-index">
+                                Companies
+                            </button>
+                        </a>
+                    </li>
+                    <li id="navtabspace"></li>
+                    <li id="navtabs">
+                        <a href="../EmployeeRegistration.php">
+                            <button class="button-index">
+                                Register
+                            </button>
+                        </a>
+                    </li>
+                    <li id="navtabspace"></li>
+                    <li id="navtabs">
+                        <a href="profilesettings.html">
+                            <button class="button-index">
+                                Johnny Sins
+                            </button>
+                        </a>
+                    </li>
+                    <li id="navtabs">
+                        <div class="UserClassificationLogo"></div>
+                        <span id="UserClassification">Employee</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="middle-content-index">
+
+            <div class="classification_container">
+                <div class="classifications_What">
+
+                    <div class="classifications_input">
+                        <div class="classiLabels">
+                            <span id="classificationLabel">What</span>
+                        </div>
+                        <div class="classiInputs">
+                            <input type="text" id="keyword-search" placeholder="Enter Keywords">
+                            
+                            <select name="industry" id="industry">
+                                <option value="" selected="selected">
+                                    Industry
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="classifications_dropdown">
+
+                        <select name="Job_Level" id="joblevel">
+                            <option value="" selected="selected">
+                                Job Level
+                            </option>
+                        </select>
+
+                        <select name="SalaryRange" id="salaryRange">
+                            <option value="" selected="selected">
+                                Salary Range
+                            </option>
+                        </select>
+
+                        <select name="JobListingSort" id="jobListingSort">
+                            <option value="" selected="selected">
+                                Sort by
+                            </option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="classifications_Where">
+
+                    <div class="classifications_input">
+                        <div class="classiLabels">
+                            <span id="classificationLabel">Where</span>
+                        </div>
+                        <div class="classiInputs">
+                            <input type="text" id="keyword-search" placeholder="Enter Keywords">
+                        </div>
+                    </div>
+                    <div class="classifications_dropdown">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="listings_containter">
+                <div class="listings_header">
+                    <span id="listings_headerText">Recent Listings:</span>
+                </div>
+
+                <div class="job_listings">
+                    <ul id="job_list">
+                        <li id="job">
+                            <div class="joblistheader_container">
+                                <div class="joblistheadercompanylogo" id="company1"></div>
+                                <div class="joblistheaderText"><span>Engineering Inc.</span></div>
+                                <div class="joblistheaderSavelogo"></div>
+                            </div>
+                            <div class="joblistdetails_container">
+                                <span id="joblist_title">Civil Engineer</span>
+                                <p>Laguna <br>
+                                    5678 Solenad St. Calamba <br><br>
+                                    Requirements:
+                                </p>
+                                <ul id="joblistReq">
+                                    <li id="requirements">Walang Jowa</li>
+                                    <li id="requirements">Single</li>
+                                    <li id="requirements">Mamahalin ako ng totoo</li>
+                                    <li id="requirements">Hindi Judgemental</li>
+                                    <li id="requirements">18+</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="job">
+                            <div class="joblistheader_container">
+                                <div class="joblistheadercompanylogo" id="company2"></div>
+                                <div class="joblistheaderText"><span>Epta Tech</span></div>
+                                <div class="joblistheaderSavelogo"></div>
+                            </div>
+                            <div class="joblistdetails_container">
+                                <span id="joblist_title">Software Developer</span>
+                                <p>Batangas City <br>
+                                    1234 Alfonso St. Batangas City <br><br>
+                                    Requirements:
+                                </p>
+                                <ul id="joblistReq">
+                                    <li id="requirements">Walang Jowa</li>
+                                    <li id="requirements">Single</li>
+                                    <li id="requirements">Mamahalin ako ng totoo</li>
+                                    <li id="requirements">Hindi Judgemental</li>
+                                    <li id="requirements">18+</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="job">
+                            <div class="joblistheader_container">
+                                <div class="joblistheadercompanylogo" id="company3"></div>
+                                <div class="joblistheaderText"><span>Riverside International School</span></div>
+                                <div class="joblistheaderSavelogo"></div>
+                            </div>
+                            <div class="joblistdetails_container">
+                                <span id="joblist_title">Elementary School Teacher</span>
+                                <p>Makati City <br>
+                                    4321 Rizal St. Makati City <br><br>
+                                    Requirements:
+                                </p>
+                                <ul id="joblistReq">
+                                    <li id="requirements">Walang Jowa</li>
+                                    <li id="requirements">Single</li>
+                                    <li id="requirements">Mamahalin ako ng totoo</li>
+                                    <li id="requirements">Hindi Judgemental</li>
+                                    <li id="requirements">18+</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="job">
+                            <div class="joblistheader_container">
+                                <div class="joblistheadercompanylogo" id="company4"></div>
+                                <div class="joblistheaderText"><span>Graphica</span></div>
+                                <div class="joblistheaderSavelogo"></div>
+                            </div>
+                            <div class="joblistdetails_container">
+                                <span id="joblist_title">Graphic Designer</span>
+                                <p>Leyte <br>
+                                    5765 Tacloban St. Leyte <br><br>
+                                    Requirements:
+                                </p>
+                                <ul id="joblistReq">
+                                    <li id="requirements">Walang Jowa</li>
+                                    <li id="requirements">Single</li>
+                                    <li id="requirements">Mamahalin ako ng totoo</li>
+                                    <li id="requirements">Hindi Judgemental</li>
+                                    <li id="requirements">18+</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
