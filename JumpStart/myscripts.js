@@ -31,13 +31,37 @@ function validateForm(event) {
 // function that checks the phone number and validates it
 function validateForm2(event) {
     var phoneNumber = document.getElementById('phonenumber').value;
-
-    if (!isValidPhoneNumber(phoneNumber)) {
-        displayModal('Phone number must be 11 digits and in "09XX-XXX-XXXX" format.');
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var confirmPass = document.getElementById('confirmpassword').value;
+    
+    // validate email if correct
+    if (!isValidEmail(email)) {
+        displayModal('Please enter a valid email address.');
         event.preventDefault(); // prevent form submission
         return false;
     }
-    
+
+    // validate password if atleast 8 characters long
+    if (password.length < 8) {
+        displayModal('Password must be at least 8 characters long.');
+        event.preventDefault(); // prevent form submission
+        return false;
+    }
+
+    if (confirmPass != password) {
+        displayModal('Password and Confirm Password does not match.');
+        event.preventDefault(); // prevent form submission
+        return false;
+    }
+
+    if (!isValidPhoneNumber(phoneNumber)) {
+        displayModal('Phone number must be 11 digits.');
+        event.preventDefault(); // prevent form submission
+        return false;
+    }
+
+    displayModal2('You have successfully registered your account.');
     return true; // if true, allow submit
 }
 
@@ -86,7 +110,7 @@ function isValidEmail(email) {
 // function that validates the phone number entered
 function isValidPhoneNumber(phoneNumber) {
     // validate phone number format using RegEx
-    return /^09\d{2}-\d{3}-\d{4}$/.test(phoneNumber);
+    return /^09\d{9}$/.test(phoneNumber);
 }
 
 /* This is for the index page */
