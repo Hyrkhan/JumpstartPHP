@@ -23,7 +23,7 @@
                 <ul id="navigationtabs">
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <a href="/Employee_Website/employeeHomepage.html" id="page_link">
+                        <a href="../JumpStart/Employee_Website/employeeHomepage.html" id="page_link">
                             <button class="button">
                                 Home
                             </button>
@@ -87,7 +87,7 @@
                             <div class="employerRegtext">
                                 Are you an Employer? 
                                 <span id="employerRegLink">
-                                    <a href="login2.html" id="employerReg">
+                                    <a href="EmployerLogin.php" id="employerReg">
                                         Login as Employer
                                     </a>
                                 </span>
