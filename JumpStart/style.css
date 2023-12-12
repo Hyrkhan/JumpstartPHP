@@ -1,0 +1,1405 @@
+body {
+    margin: 0;
+}
+.whole-container {
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-content {
+    height: 12%;
+    background-color: rgba(53,66,74,255);
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 20px 30px -20px black;
+    width: 100%;
+    z-index: 5;
+}
+.logoside {
+    height: 80%;
+    padding-left: 2%;
+    width: 50vh;
+    /*background-color: wheat;*/
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    height: 100%;
+    width: 50vh;
+    background-image: url(../JumpStart/images/JumpStartLogo.png);
+    background-size: 100% 100%;
+}
+.navigationside {
+    height: 100%;
+    width: 150vh;
+    /*background-color: aqua;*/
+    padding-left: 25px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: right;
+}
+.navigationside ul#navigationtabs {
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+    width: 115vh;
+    list-style: none; 
+    display: flex; 
+    flex-direction: row;
+    /*background-color: white;*/
+}
+.navigationside #navigationtabs li#navtabs
+{
+    height: 100%;
+    width: 50%;
+    /*margin-left: 2%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*cursor: pointer;*/
+    color: white;
+    font-size: 25px;
+    /*background-color: brown;*/
+}
+.navigationside #navigationtabs li#navtabspace {
+    height: 100%;
+    width: 5px;
+    background-color: white;
+}
+.currenttab {
+    background-color: rgba(228,77,38,255);
+    border: none;
+    color: white;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: x-large;
+}
+.button {
+    background-color: rgba(53,66,74,255);
+    /*background-color: aqua;*/
+    border: none;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 175px;
+    font-size: x-large;
+    cursor: pointer;
+}
+.button:hover {
+    text-decoration: underline;
+}
+.whole-container .middle-content {
+    height: 95%;
+    /*background-color: white;*/
+    display: flex;
+    flex-direction: row;
+}
+.whole-container .middle-content .registerandpic-middle-content {
+    height: 100%;
+    width: 300vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    /*background-color: rgba(255, 0, 0, 0.555);*/
+}
+.whole-container .middle-content .registerandpic-middle-content .registrationform-box {
+    height: 600px;
+    width: 76.7vh;;
+    background-color: rgba(116,125,130,255);
+    margin-left: 100px;
+    margin-right: 2.5%;
+    margin-top: 11vh;
+    box-shadow: 20px 20px 30px -10px black;
+}
+.formbox-topdesign {
+    height: 12vh;
+    width: 76.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(../JumpStart/images/formdes.png);
+    background-size: 90%, 100%;
+    background-color: rgba(53,66,74,255);
+}
+.register-text {
+    /*background-color: aqua;*/
+    height: 15%;
+    color: white;
+    font-size: xxx-large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8vh;
+}
+span#OrangeText {
+    color: rgba(228,77,38,255);
+}
+.registrationform, .loginform {
+    /*background-color: beige;*/
+    height: 85%;
+    width: 76.7vh;
+    margin-top: 2px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(../JumpStart/images/boxdesign.png);
+    background-size: 15%;
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+.registrationform form {
+    /*background-color: aquamarine;*/
+    height: 90%;
+    width: 95%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+span#formremindertext {
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: large;
+}
+.registrationform form input[type="text"], .registrationform form input[type="password"] {
+    height: 5vh;
+    width: 50vh;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.checkbox-policy {
+    margin-top: 15px;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+span#formremindertext2 {
+    margin-left: 15px;
+    color: white;
+    font-weight: lighter;
+    font-size: large;
+}
+.registrationform form input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+}
+.registrationform form input[type="submit"] {
+    background-color: rgba(228,77,38,255);
+    height: 80px;
+    margin: 5%;
+    color: white;
+    font-size: xx-large;
+}
+.registrationform form input[type="submit"]:hover {
+    text-decoration: underline;
+}
+.whole-container .middle-content .registerandpic-middle-content .picture-box {
+    height: 720px;
+    width: 700px;
+    /*background-color: wheat;*/
+    margin-left: 2.5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+} 
+.picture {
+    height: 100%;
+    width: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../JumpStart/images/employeeReg.png);
+    background-size: 90% 90%;
+}
+.employerRegtext {
+    padding-right: 30px;
+    display: flex;
+    justify-content: right;
+    font-size: x-large;
+    height: 50px;
+    padding-bottom: 15px;
+}
+span#employerRegLink {
+    padding-left: 5px;
+    cursor: pointer;
+}
+span#employerRegLink:hover {
+    text-decoration: underline;
+    color: rgba(228,77,38,255);
+}
+a#employerReg {
+    text-decoration: none;
+    color: rgba(228,77,38,255);
+}
+.modal { 
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 20px 20px 30px -10px black;
+    z-index: 1000;
+    height: 150px;
+    width: 430px;
+}
+
+#modalDesign {
+    height: 37%;
+    width: 100%;
+    background-color: rgba(53,66,74,255);
+}
+
+#modalDesignPicture {
+    height: 100%;
+    width: 100%;
+    background-image: url(../JumpStart/images/ErrorBoxDesign.png);
+    background-size: 90%, 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+span#RedText {
+    color: rgba(255,0,0,255);
+}
+
+.errorTexttitle {
+    margin-left: 160px;
+    height: 100%;
+    width: 55%;
+    /*background-color: azure;*/
+    display: flex;
+    align-items: center;
+    font-size: xxx-large;
+    color: white;
+    
+}
+
+#modalContent {
+    color: rgba(98,106,112,255);
+    font-weight: bolder;
+    height: 66%;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#closeModal {
+    padding-left: 20px;
+    cursor: pointer;
+    float: right;
+    color: white;
+    /*background-color: bisque;*/
+}
+
+
+#modalDesignPicture2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../JumpStart/images/SuccessBoxDesign.png);
+    background-size: 90%, 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.SuccessTexttitle {
+    margin-left: 70px;
+    height: 100%;
+    width: 55%;
+    /*background-color: azure;*/
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    color: white;
+}
+span#GreenText {
+    color: rgba(126,217,87,255);
+}
+
+#modalContent2 {
+    color: rgba(98,106,112,255);
+    font-weight: bolder;
+    height: 66%;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#closeModal2 {
+    padding-left: 105px;
+    cursor: pointer;
+    float: right;
+    color: white;
+    /*background-color: bisque;*/
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    z-index: 999; /* Set a higher z-index than your modals */
+}
+
+/* EMPLOYER REGISTRATION */
+
+.registrationform2-box {
+    height: 600px;
+    width: 120vh;
+    background-color: rgba(116,125,130,255);
+    margin-left: 100px;
+    margin-right: 2.5%;
+    margin-top: 11vh;
+    box-shadow: 20px 20px 30px -10px black;
+}
+.formbox2-topdesign {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: url(../JumpStart/images/formdes.png);
+    background-size: 47%, 100%;
+    background-color: rgba(53,66,74,255);
+}
+.registrationform2 {
+    /*background-color: beige;*/
+    height: 85%;
+    width: 100%;
+    margin-top: 2px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(../JumpStart/images/boxdesign.png);
+    background-size: 15%;
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+.registrationform2 form {
+    /*background-color: aquamarine;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.formleft, .formright {
+    /*background-color: blueviolet;*/
+    height: 90%;
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.registrationform2 form input[type="text"], .registrationform2 form input[type="password"] {
+    height: 5vh;
+    width: 50vh;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.registrationform2 form input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+}
+.registrationform2 form input[type="submit"] {
+    background-color: rgba(228,77,38,255);
+    height: 80px;
+    margin: 5%;
+    color: white;
+    font-size: xx-large;
+}
+.registrationform2 form input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+/* This is for the Employee Homepage page*/
+
+.navigationside-index {
+    height: 100%;
+    width: 150vh;
+    /*background-color: aqua;*/
+    margin-left: 10px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: right;
+}
+.navigationside-index ul#navigationtabs {
+    margin: 0;
+    padding-left: 0;
+    height: 100%;
+    width: 120vh;
+    list-style: none; 
+    display: flex; 
+    flex-direction: row;
+    /*background-color: white;*/
+}
+.navigationside-index #navigationtabs li#navtabs
+{
+    height: 100%;
+    width: 50%;
+    /*margin-left: 2%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*cursor: pointer;*/
+    color: white;
+    font-size: 25px;
+    /*background-color: brown;*/
+}
+.navigationside-index #navigationtabs li#navtabspace {
+    height: 100%;
+    width: 5px;
+    background-color: white;
+}
+.UserClassificationLogo {
+    background-image: url(../JumpStart/images/employeeLogo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 80%;
+    width: 80px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+span#UserClassification {
+    color: rgba(228,77,38,255);
+}
+.currenttab-index {
+    background-color: rgba(228,77,38,255);
+    border: none;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    font-size: x-large;
+}
+.button-index {
+    background-color: rgba(53,66,74,255);
+    /*background-color: aqua;*/
+    border: none;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 175px;
+    font-size: x-large;
+    cursor: pointer;
+}
+.button-index:hover {
+    text-decoration: underline;
+}
+.middle-content-index {
+    height: 95%;
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column;
+}
+.classification_container {
+    /*background-color: gray;*/
+    height: 350px;
+    width: 100%;
+    background-image: url(../JumpStart/images/classificationBanner.png);
+    display: flex;
+}
+.classifications_What {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 50%;
+    margin-left: 10%;
+}
+.classifications_Where {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 50%;
+}
+.classifications_input {
+    /*background-color: antiquewhite;*/
+    height: 50%;
+    width: 100%;
+    padding-top: 5px;
+}
+.classifications_dropdown {
+    /*background-color: blanchedalmond;*/
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+span#classificationLabel {
+    /*background-color: gray;*/
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.classiInputs {
+    /*background-color: aqua;*/
+    display: flex;
+}
+.classiInputs input[type="text"] {
+    height: 4.7vh;
+    width: 40vh;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    font-size: large;
+    padding-left: 15px;
+}
+select#industry {
+    height: 5.5vh;
+    width: 35vh;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-size: large;
+    padding-left: 15px;
+    color: gray;
+}
+select#joblevel ,select#salaryRange, select#jobListingSort  {
+    height: 5vh;
+    width: 25vh;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-size: large;
+    padding-left: 15px;
+    color: gray;
+}
+.listings_containter {
+    /*background-color: bisque;*/
+    height: 100%;
+    width: 100%;
+}
+.listings_header {
+    /*background-color: whitesmoke;*/
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+span#listings_headerText {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgba(53,66,74,255);
+}
+.job_listings {
+    /*background-color: aquamarine;*/
+    height: 610px;
+    width: 100%;
+}
+ul#job_list {
+    margin: 0;
+    width: 100%;
+    padding-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul#job_list li {
+    list-style: none;
+    margin-bottom: 30px;
+    margin-right: 70px;
+}
+ul#job_list li#job {
+    /*background-color: gray;*/
+    height: 400px;
+    width: 350px;
+    border-radius: 40px;
+    background-image: url(../JumpStart/images/job_boxDesign.png);
+    background-size: 112%, 100%;
+    background-repeat: no-repeat;
+}
+.joblistheader_container {
+    /*background-color: aqua;*/
+    height: 20%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.joblistheadercompanylogo {
+    /*background-color: beige;*/
+    height: 90%;
+    width: 27%;
+    background-size: 70%, 100%;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+#company1 {
+    background-image: url(../JumpStart/images/companyLogo1.png);
+}
+#company2 {
+    background-image: url(../JumpStart/images/companyLogo2.png);
+}
+#company3 {
+    background-image: url(../JumpStart/images/companyLogo3.png);
+}
+#company4 {
+    background-image: url(../JumpStart/images/companyLogo4.png);
+    margin-top: 45px;
+}
+.joblistheaderText {
+    /*background-color: gray;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+.joblistheaderSavelogo {
+    /*background-color: pink;*/
+    height: 70%;
+    width: 20%;
+    background-image: url(../JumpStart/images/save.png);
+    background-size: 60%, 100%;
+    margin-top: 15px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+}
+.joblistdetails_container {
+    /*background-color: brown;*/
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 10px;
+    color: white;
+    font-size: large;
+}
+span#joblist_title {
+    font-size: larger;
+    font-weight: bold;
+}
+ul#joblistReq li {
+    list-style: disc;
+}
+
+/* This is for the job applications page*/
+
+.appliedlistings_containter {
+    /*background-color: bisque;*/
+    width: 100%;
+    padding-top: 2%;
+}
+.appliedlistings_header {
+    /*background-color: whitesmoke;*/
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-bottom: 2%;
+}
+span#appliedListings_headerText {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(228,77,38,255);
+    border-radius: 10px;
+    height: 50px;
+    width: 310px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+.appliedjob_listings {
+    /*background-color: aquamarine;*/
+    height: 610px;
+    width: 100%;
+}
+ul#appliedjob_list {
+    margin: 0;
+    padding-left: 7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul#appliedjob_list li {
+    list-style: none;
+    margin-right: 70px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul#appliedjob_list li#appliedjob {
+    /*background-color: gray;*/
+    background-image: url(../JumpStart/images/stretchedBoxDesign.png);
+    background-size: 105%, 100%;
+    height: 200px;
+    width: 350px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
+.appliedjobheader_container {
+    /*background-color: aqua;*/
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+.appliedjobcompanylogo {
+    /*background-color: green;*/
+    height: 100%;
+    width: 27%;
+    background-size: 80%, 100%;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+}
+#company5 {
+    background-image: url(../JumpStart/images/companylogo5.png);
+}
+#company6 {
+    background-image: url(../JumpStart/images/companylogo6.png);
+}
+#company7 {
+    background-image: url(../JumpStart/images/companylogo7.png);
+}
+#company8 {
+    background-image: url(../JumpStart/images/companylogo8.png);
+}
+#company9 {
+    background-image: url(../JumpStart/images/companylogo9.png);
+}
+#company10 {
+    background-image: url(../JumpStart/images/companylogo10.png);
+}
+.appliedjobcompanyName {
+    /*background-color: gray;*/
+    height: 90%;
+    width: 50%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 5px;
+}
+p#appliedjobpara {
+    /*background-color: antiquewhite;*/
+    height: 45%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+}
+span#appliedjobtitle, span#appliedjobstatus, span#appliedjobstatus_rejected {
+    /*background-color: blueviolet;*/
+    margin-bottom: 30px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+span#appliedjobstatus_rejected {
+    color: rgba(228,77,38,255);
+}
+
+/* This is for the Company List */
+
+.companylistings_containter {
+    width: 100%;
+    padding-top: 2%;
+}
+
+.companylistings_header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-bottom: 2%;
+}
+
+span#companyListings_headerText {
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(228, 77, 38, 255);
+    border-radius: 10px;
+    height: 50px;
+    width: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.company_listings {
+    height: 610px;
+    width: 100%;
+}
+
+ul#company_list {
+    margin: 0;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul#company_list li {
+    list-style: none;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+ul#company_list li#company {
+    background-image: url(../JumpStart/images/stretchedBoxDesign.png);
+    background-size: 100%, 100%;
+    height: 160px;
+    width: 350px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: height 0.3s ease;
+}
+
+.companyheader_container {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s ease;
+    /*background-color: beige;*/
+}
+
+.CompanyList_companylogo {
+    /*background-color: green;*/
+    height: 120px;
+    width: 27%;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+.CompanyList_companyName {
+    /*background-color: gray;*/
+    height: 120px;
+    width: 45%;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: top;
+    color: white;
+    padding-top: 50px;
+    padding-left: 10px;
+    margin: 0;
+    z-index: 2;
+    transition: margin 0.3s ease;
+}
+#riverside {
+    padding-top: 30px;
+    font-size: 25px;
+}
+.companyheader_details {
+    color: white;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transition: height 0.3s ease;
+    font-size: large;
+    /*background-color: aqua;*/
+}
+ul#company_list li#company:hover {
+    height: 350px;
+    transition: height 0.3s ease;
+}
+
+ul#company_list li#company:hover .companyheader_container {
+    background-color:  rgba(53,66,74,255);
+    /*background-color: beige;*/
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+}
+
+ul#company_list li#company:hover .companyheader_details {
+    height: 100px;
+    transition: height 0.3s ease;
+    padding-bottom: 50px;
+}
+
+/* This is for the profile settings Employee */
+
+.whole_settings_container {
+    /*background-color: beige;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.settings_leftside {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 90vh;
+    border: 1px solid;
+}
+.settings_rightside {
+    /*background-color: rgb(158, 141, 219);*/
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+}
+.UserClassificationLogodiv {
+    /*background-color: gray;*/
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logobox {
+    background-image: url(../JumpStart/images/vincent.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: orchid;*/
+    height: 350px;
+    width: 350px;
+}
+.UserClassificationdetailsdiv {
+    /*background-color: blanchedalmond;*/
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span#userclassi {
+    /*background-color: blueviolet;*/
+    font-size: xx-large;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 25px;
+    font-weight: bolder;
+    color: rgba(228,77,38,255);
+}
+ul#userdetails {
+    /*background-color: cadetblue;*/
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul#userdetails li {
+    /*background-color: whitesmoke;*/
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+}
+ul#settings_list {
+    /*background-color: bisque;*/
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+ul#settings_list li {
+    list-style: none;
+    /*background-color: brown;*/
+    height: 16.65%;
+    
+}
+.settings {
+    height: 100%;
+    width: 100%;
+    background-color: none;
+    padding: 0;
+}
+.settings_title, .settings_title_deleteAcc {
+    /*background-color: gray;*/
+    height: 50%;
+    width: 80vh;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.settings_desc, .settings_desc_deleteAcc  {
+    /*background-color: aqua;*/
+    height: 50%;
+    width: 80vh;
+    font-size: x-large;
+    color: gray;
+    text-align: left;
+    padding-left: 150px;
+}
+.settings_title_deleteAcc, .settings_desc_deleteAcc {
+    color: rgba(228,77,38,255);
+}
+
+/* This is for the Employer Homepage */
+
+.yourjob_listings {
+    /*background-color: aquamarine;*/
+    height: 610px;
+    width: 100%;
+}
+ul#yourjob_list {
+    margin: 0;
+    padding-left: 7%;
+    display: flex;
+    flex-direction: row;
+}
+ul#yourjob_list li {
+    list-style: none;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul#yourjob_list li#yourjoblist {
+    /*background-color: gray;*/
+    background-image: url(../JumpStart/images/stretchedBoxDesign.png);
+    background-size: 100%, 100%;
+    height: 250px;
+    width: 450px;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+}
+.joblistheader {
+    /*background-color: aqua;*/
+    height: 40%;
+    width: 95%;
+    font-size: 30px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.joblistapplicants {
+    /*background-color: aqua;*/
+    height: 10%;
+    width: 85%;
+    font-size: 20px;
+    color: white;
+}
+.joblistdate {
+    /*background-color: aqua;*/
+    height: 30%;
+    width: 85%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+/* This is for the Create Job Listing Webpage */
+
+.createjoblisting_container {
+    /*background-color: gray;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.createjoblisting_box {
+    background-color: gray;
+    height: 75vh;
+    width: 160vh;
+}
+.listing_boxdesign {
+    background-color: rgba(53,66,74,255);
+    background-image: url(../JumpStart/images/superlongBoxDesign.png);
+    background-size: 82%, 100%;
+    background-repeat: no-repeat;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span#listing_textHeader {
+    color: white;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+.listing_form_container {
+    /*background-color: beige;*/
+    height: 42.5%;
+    display: flex;
+}
+.seperator_container {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 33%;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.listingform {
+    /*background-color: rgb(176, 176, 253);*/
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 30px;
+    color: white;
+}
+.listingform input[type="text"] {
+    height: 50px;
+    width: 350px;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+.bottom_listing_form_container {
+    /*background-color: rebeccapurple;*/
+    height: 42.5%;
+    display: flex;
+}
+.bottom_listing_form {
+    /*background-color: antiquewhite;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-left: 30px;
+    color: white;
+}
+.bottom_listing_form input[type="text"] {
+    height: 150px;
+    width: 650px;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    font-size: large;
+    border: 2px solid;
+}
+.bottom_listing_form_submit {
+    /*background-color: antiquewhite;*/
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.bottom_listing_form_submit input[type="submit"] {
+    height: 100px;
+    width: 350px;
+    border-radius: 15px;
+    font-size: x-large;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    background-color: rgba(228,77,38,255);
+    color: white;
+}
+.bottom_listing_form_submit input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
+/* This is for the Employees List Page*/
+
+.middle-content-list {
+    height: 95%;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+}
+.employeelist_container {
+    /*background-color: gray;*/
+    height: 100%;
+    width: 140vh;
+    display: flex;
+    align-items: center;
+}
+.employeelist_box {
+    /*background-color: aqua;*/
+    height: 80%;
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ul#employeelist {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /*background-color: antiquewhite;*/
+}
+ul#employeelist li {
+    list-style: none;
+    /*background-color: brown;*/
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+ul#employeelist li#employee .employeeLogo {
+    /*background-color: wheat;*/
+    height: 100%;
+    width: 10%;
+    background-image: url(../JumpStart/images/tristan.png);
+    background-repeat: no-repeat;
+    background-size: 70%, 100%;
+}
+.employeeName, .employeeContact {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+span#employeename, span#employeecontact {
+    font-size: 40px;
+    margin-left: 20px;
+}
+.employeeResume {
+    /*background-color: rgb(125, 219, 125);*/
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span#employeeresume {
+    font-size: 40px;
+    margin-left: 20px;
+    color: rgba(228,77,38,255);
+    cursor: pointer;
+}
+span#employeeresume:hover {
+    text-decoration: underline;
+}
+.pagenumber {
+    /*background-color: aqua;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+span#pagenumbers {
+    /*background-color: antiquewhite;*/
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+span#OrangeTextPageNumber {
+    color: rgba(228,77,38,255);
+    text-decoration: underline;
+}
+/* Employer Settings*/
+
+.logobox2 {
+    background-image: url(../JumpStart/images/torres.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: orchid;*/
+    height: 350px;
+    width: 350px;
+}
+
+/* Login Page*/
+
+.loginform {
+    /*background-color: beige;*/
+    height: 85%;
+    width: 76.7vh;
+    margin-top: 2px;
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(../JumpStart/images/loginboxDesign.png);
+    background-size: 15%;
+    background-position: 100% 35%;
+    background-repeat: no-repeat;
+}
+.loginform form {
+    /*background-color: aquamarine;*/
+    height: 90%;
+    width: 95%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 50px;
+}
+.loginform form input[type="text"], .loginform form input[type="password"] {
+    height: 5vh;
+    width: 50vh;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.loginform form input[type="submit"] {
+    background-color: rgba(228,77,38,255);
+    height: 80px;
+    margin: 5%;
+    color: white;
+    font-size: xx-large;
+}
+.loginform form input[type="submit"]:hover {
+    text-decoration: underline;
+}
+.picture3, .picture4 {
+    height: 90%;
+    width: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../JumpStart/images/loginPict.png);
+    background-size: 90% 90%;
+}
+.picture4 {
+    background-image: url(../JumpStart/images/employerReg.png);
+}
