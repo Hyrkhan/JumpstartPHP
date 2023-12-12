@@ -49,9 +49,11 @@
                     </li>
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <button class="button">
-                            Login
-                        </button>
+                        <a href="EmployeeLogin.php">
+                            <button class="button">
+                                Login
+                            </button>
+                        </a>
                     </li>
                 </ul>
 
