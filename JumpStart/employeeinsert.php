@@ -22,6 +22,10 @@ if (isset($_POST['reg_user'])) {
     array_push($errors, "The two passwords do not match");
   }
 
+	//Validate form using javascript
+    echo '<script src="myscripts.js"></script>';
+    echo '<script type="text/javascript">validateForm2(event);</script>';
+
   // first check the database to make sure 
   // a user does not already exist with the same email
   $user_check_query = "SELECT * FROM employeeregistration WHERE email='$email' LIMIT 1";
@@ -65,7 +69,7 @@ if (isset($_POST['login_user'])) {
   	if (mysqli_num_rows($results) == 1) {
   	  $_SESSION['email'] = $email;
   	  $_SESSION['success'] = "You are now logged in";
-  	  header('location: employeeHomepage.php');
+  	  header('location: ../JumpStart/Employee_Website/employeeHomepage.html');
   	}else {
   		array_push($errors, "Wrong email/password combination");
   	}
