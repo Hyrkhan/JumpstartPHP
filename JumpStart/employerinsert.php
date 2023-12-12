@@ -28,6 +28,10 @@ if (isset($_POST['reg_user'])) {
     if (empty($business)) { array_push($errors, "Business name is required"); }
     if (empty($phonenumber)) { array_push($errors, "Phone number is required"); }
 
+    //Validate form using javascript
+    echo '<script src="myscripts.js"></script>';
+    echo '<script type="text/javascript">validateForm2(event);</script>';
+    
     // first check the database to make sure 
     // a user does not already exist with the same email
     $user_check_query = "SELECT * FROM employerregistration WHERE email='$email' LIMIT 1";
