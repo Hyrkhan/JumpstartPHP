@@ -1,4 +1,4 @@
-<?php include ('employeeinsert.php') ?>
+<?php include ('employerinsert.php') ?>
 <!DOCTYPE html>
 <html>
 <title>Jumpstart Ph</title>
@@ -23,7 +23,7 @@
                 <ul id="navigationtabs">
                     <li id="navtabspace"></li>
                     <li id="navtabs">
-                        <a href="../JumpStart/Employer_Website/employerHomepage.html" id="page_link">
+                        <a href="/Employer_Website/employerHomepage.html" id="page_link">
                             <button class="button">
                                 Home
                             </button>
@@ -75,7 +75,7 @@
 
                     <div class="registrationform2">
 
-                        <form  action="" onsubmit="return validateForm(event)">
+                        <form method="post" action="employerinsert.php" onsubmit="return validateForm(event)">
                             <div class="formleft">
                                 <label for="email">Email Address:</label>
                                 <span id="formremindertext">Verification will be required to post a job listing</span>
@@ -96,11 +96,11 @@
                                     <input type="checkbox" id="policy" name="policy" required>
                                     <span id="formremindertext2">something something accept privacy policy</span><br>
                                 </div>
-                                <input type="submit" value="NEXT">
+                                <input type="submit" name="reg_user" value="REGISTER">
                                 <div class="employerRegtext">
                                     Are you an Employee? 
                                     <span id="employerRegLink">
-                                        <a href="EmployeeRegistration.php" id="employerReg">
+                                        <a href="EmployeeRegistration.html" id="employerReg">
                                             click here
                                         </a>
                                     </span>
