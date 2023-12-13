@@ -701,8 +701,17 @@ span#joblist_title {
     font-size: larger;
     font-weight: bold;
 }
+
+ul#joblistReq {
+    /*background-color: blue;*/
+    padding-left: 10px;
+}
 ul#joblistReq li {
     list-style: disc;
+    /*background-color: aqua;*/
+    margin-bottom: 2px;
+    width: 100%;
+    font-size: medium;
 }
 
 /* This is for the job applications page*/
