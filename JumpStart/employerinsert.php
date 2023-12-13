@@ -40,6 +40,7 @@ if (isset($_POST['reg_user'])) {
 
     if ($user) {
       array_push($errors, "Email already exists");
+      header('location: EmployerRegistration.php');
     }
 
     // Finally, register user if there are no errors in the form
@@ -78,6 +79,7 @@ if (isset($_POST['login_user'])) {
   	  header('location: ../JumpStart/Employer_Website/employerHomepage.html');
   	}else {
   		array_push($errors, "Wrong email/password combination");
+      header('location: EmployerLogin.php');
   	}
   }
 }
