@@ -34,6 +34,7 @@ if (isset($_POST['reg_user'])) {
 
   if ($user) {
     array_push($errors, "Email already exists");
+    echo "Email already exists";
   }
 
   // Finally, register user if there are no errors in the form
@@ -71,7 +72,7 @@ if (isset($_POST['login_user'])) {
   	  $_SESSION['success'] = "You are now logged in";
   	  header('location: ../JumpStart/Employee_Website/employeeHomepage.html');
   	}else {
-  		array_push($errors, "Wrong email/password combination");
+      header('location: EmployeeLogin.php');
   	}
   }
 }
