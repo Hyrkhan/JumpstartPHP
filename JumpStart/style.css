@@ -1124,6 +1124,9 @@ ul#yourjob_list li#yourjoblist {
     align-items: center;
     color: white;
 }
+span#joblistheaderText {
+    font-size: x-large;
+}
 .joblistapplicants {
     /*background-color: aqua;*/
     height: 10%;
